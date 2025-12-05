@@ -2,10 +2,6 @@ package com.qa.api.utils;
 
 import java.util.List;
 import java.util.Map;
-
-import com.jayway.jsonpath.JsonPath;
-import com.jayway.jsonpath.ReadContext;
-
 import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
 
@@ -30,8 +26,8 @@ public class XmlpathUtil {
 		}
 
 		public  <T> List<Map<String, T>> readListOfMaps(Response response, String xmlPathExpression) {
-			ReadContext ctx = JsonPath.parse(getJsonResponseAsString(response));
-			return ctx.read(jsonpath);
+			XmlPath xmlPath = getXmlPath(response);
+			return xmlPath.getList(xmlPathExpression);
 		}
 
 	}

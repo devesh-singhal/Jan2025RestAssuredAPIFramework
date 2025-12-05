@@ -1,6 +1,5 @@
 package com.qa.api.utils;
 
-import com.api.qa.gorest.tests.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.response.Response;
 
