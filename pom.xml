@@ -9,7 +9,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<name>Jan2025APIFW</name>
-	
 	<url>http://www.example.com</url>
 
 	<properties>
@@ -63,11 +62,6 @@
 			<version>7.7.0</version>
 		</dependency>
 
-		<dependency>
-			<groupId>BddCucumber</groupId>
-			<artifactId>APICucumberFramework</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 
 		<dependency>
 			<groupId>io.rest-assured</groupId>
