@@ -1,0 +1,68 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="API Regression Test Suite" verbose="4" >
+
+<listeners>
+<listener class-name="com.aventstack.chaintest.plugins.ChainTestListene"/>
+  </listeners>
+  
+  
+  <test name="Go Rest API Test - Get User" >
+    <classes>
+       <class name="com.api.qa.gorest.tests.GetUserTest" />
+    </classes>
+  </test>
+  
+  <test name="Go Rest API Test- Create User" >
+    <classes>
+       <class name="com.api.qa.gorest.tests.CreateUserTest" />
+    </classes>
+  </test>
+  
+    <test name="Go Rest API Test- Update User" >
+    <classes>
+       <class name="com.api.qa.gorest.tests.UpdateUserTest" />
+    </classes>
+  </test>
+  
+    <test name="Go Rest API Test- Delete User" >
+    <classes>
+       <class name="com.api.qa.gorest.tests.DeleteUserTest" />
+    </classes>
+  </test>
+
+ <test name="Go Rest API Test- Get Product" >
+    <classes>
+       <class name="com.api.qa.products.tests.ProductAPITest" />
+    </classes>
+  </test>
+  
+<test name="Schema Validation Test" >
+    <classes>
+       <class name="com.qa.api.schema.tests.GoRestUserAPISchemaTest" />
+    </classes>
+  </test>
+  
+<test name="Spotify API Test- Get Album " >
+    <classes>
+       <class name="com.qa.api.spotify.tests.SpotifyAPITest" />
+    </classes>
+  </test>
+  
+  <test name="BasicAuth API Test" >
+    <classes>
+       <class name="com.qa.api.basicauth.tests.BasicAuthTest" />
+    </classes>
+  </test>
+  
+    
+  <test name="Conatcts API Test- Get All Contacts" >
+    <classes>
+       <class name="com.api.qa.contacts.tests.ContactsAPITest" />
+    </classes>
+  </test>
+  
+  
+
+
+</suite>

@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-API_Regression_Test_Suite" class="navigator-link">
+              <span class="suite-name border-passed">API Regression Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-API_Regression_Test_Suite" class="navigator-link ">
+                    <span>C:\Users\Devesh\eclipse-workspace\Jan2025APIFW\src\test\resources\testrunners\testng_regression.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-API_Regression_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">7 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-API_Regression_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-API_Regression_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-API_Regression_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-API_Regression_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-API_Regression_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-API_Regression_Test_Suite" class="hide-methods passed suite-API_Regression_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-API_Regression_Test_Suite -->
+                      <a href="#" panel-name="suite-API_Regression_Test_Suite" class="show-methods passed suite-API_Regression_Test_Suite"> (show)</a> <!-- show-methods passed suite-API_Regression_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-API_Regression_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression_Test_Suite" title="com.qa.api.basicauth.tests.BasicAuthTest" class="method navigator-link" hash-for-method="basicAuthTest">basicAuthTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression_Test_Suite" title="com.api.qa.gorest.tests.CreateUserTest" class="method navigator-link" hash-for-method="createAUserTest(ankita, male, active)">createAUserTest(ankita, male, active)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression_Test_Suite" title="com.api.qa.gorest.tests.CreateUserTest" class="method navigator-link" hash-for-method="createAUserTest(sonu, male, active)">createAUserTest(sonu, male, active)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression_Test_Suite" title="com.api.qa.gorest.tests.CreateUserTest" class="method navigator-link" hash-for-method="createAUserTest(raja, male, active)">createAUserTest(raja, male, active)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression_Test_Suite" title="com.api.qa.gorest.tests.CreateUserTest" class="method navigator-link" hash-for-method="createAUserTest(mukul, male, active)">createAUserTest(mukul, male, active)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression_Test_Suite" title="com.api.qa.gorest.tests.CreateUserTest" class="method navigator-link" hash-for-method="createAUserTest(puneet, male, inactive)">createAUserTest(puneet, male, inactive)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression_Test_Suite" title="com.api.qa.gorest.tests.CreateUserTest" class="method navigator-link" hash-for-method="createAUserTest(pashika, female, active)">createAUserTest(pashika, female, active)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression_Test_Suite" title="com.api.qa.gorest.tests.CreateUserTest" class="method navigator-link" hash-for-method="createAUserTestWithJsonFile">createAUserTestWithJsonFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression_Test_Suite" title="com.qa.api.schema.tests.GoRestUserAPISchemaTest" class="method navigator-link" hash-for-method="createUserAPISchemaTest">createUserAPISchemaTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression_Test_Suite" title="com.qa.api.spotify.tests.SpotifyAPITest" class="method navigator-link" hash-for-method="getAlbumTest">getAlbumTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression_Test_Suite" title="com.api.qa.products.tests.ProductAPITest" class="method navigator-link" hash-for-method="getAllProducts">getAllProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression_Test_Suite" title="com.api.qa.gorest.tests.GetUserTest" class="method navigator-link" hash-for-method="getAllUsersTest">getAllUsersTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression_Test_Suite" title="com.api.qa.gorest.tests.GetUserTest" class="method navigator-link" hash-for-method="getAllUsersTestWithQueryParamTest">getAllUsersTestWithQueryParamTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression_Test_Suite" title="com.api.qa.gorest.tests.GetUserTest" class="method navigator-link" hash-for-method="getSingleUserTest">getSingleUserTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression_Test_Suite" title="com.qa.api.schema.tests.GoRestUserAPISchemaTest" class="method navigator-link" hash-for-method="getUserAPISchemaTest">getUserAPISchemaTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression_Test_Suite" title="com.api.qa.gorest.tests.UpdateUserTest" class="method navigator-link" hash-for-method="updateUserTest">updateUserTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-API_Regression_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-API_Regression_Test_Suite" class="panel API_Regression_Test_Suite">
+          <div class="suite-API_Regression_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.api.basicauth.tests.BasicAuthTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="basicAuthTest">
+                  </a> <!-- basicAuthTest -->
+                  <span class="method-name">basicAuthTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression_Test_Suite-class-passed -->
+          <div class="suite-API_Regression_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.api.spotify.tests.SpotifyAPITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAlbumTest">
+                  </a> <!-- getAlbumTest -->
+                  <span class="method-name">getAlbumTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression_Test_Suite-class-passed -->
+          <div class="suite-API_Regression_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.qa.gorest.tests.UpdateUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserTest">
+                  </a> <!-- updateUserTest -->
+                  <span class="method-name">updateUserTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression_Test_Suite-class-passed -->
+          <div class="suite-API_Regression_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.qa.gorest.tests.CreateUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAUserTest(ankita, male, active)">
+                  </a> <!-- createAUserTest(ankita, male, active) -->
+                  <span class="method-name">createAUserTest</span>
+                  <span class="parameters">(ankita,male,active)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAUserTest(sonu, male, active)">
+                  </a> <!-- createAUserTest(sonu, male, active) -->
+                  <span class="method-name">createAUserTest</span>
+                  <span class="parameters">(sonu,male,active)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAUserTest(raja, male, active)">
+                  </a> <!-- createAUserTest(raja, male, active) -->
+                  <span class="method-name">createAUserTest</span>
+                  <span class="parameters">(raja,male,active)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAUserTest(mukul, male, active)">
+                  </a> <!-- createAUserTest(mukul, male, active) -->
+                  <span class="method-name">createAUserTest</span>
+                  <span class="parameters">(mukul,male,active)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAUserTest(puneet, male, inactive)">
+                  </a> <!-- createAUserTest(puneet, male, inactive) -->
+                  <span class="method-name">createAUserTest</span>
+                  <span class="parameters">(puneet,male,inactive)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAUserTest(pashika, female, active)">
+                  </a> <!-- createAUserTest(pashika, female, active) -->
+                  <span class="method-name">createAUserTest</span>
+                  <span class="parameters">(pashika,female,active)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAUserTestWithJsonFile">
+                  </a> <!-- createAUserTestWithJsonFile -->
+                  <span class="method-name">createAUserTestWithJsonFile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression_Test_Suite-class-passed -->
+          <div class="suite-API_Regression_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.qa.products.tests.ProductAPITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllProducts">
+                  </a> <!-- getAllProducts -->
+                  <span class="method-name">getAllProducts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression_Test_Suite-class-passed -->
+          <div class="suite-API_Regression_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.qa.gorest.tests.GetUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllUsersTest">
+                  </a> <!-- getAllUsersTest -->
+                  <span class="method-name">getAllUsersTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllUsersTestWithQueryParamTest">
+                  </a> <!-- getAllUsersTestWithQueryParamTest -->
+                  <span class="method-name">getAllUsersTestWithQueryParamTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSingleUserTest">
+                  </a> <!-- getSingleUserTest -->
+                  <span class="method-name">getSingleUserTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression_Test_Suite-class-passed -->
+          <div class="suite-API_Regression_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.api.schema.tests.GoRestUserAPISchemaTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUserAPISchemaTest">
+                  </a> <!-- createUserAPISchemaTest -->
+                  <span class="method-name">createUserAPISchemaTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserAPISchemaTest">
+                  </a> <!-- getUserAPISchemaTest -->
+                  <span class="method-name">getUserAPISchemaTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression_Test_Suite-class-passed -->
+        </div> <!-- panel API_Regression_Test_Suite -->
+        <div panel-name="test-xml-API_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Devesh\eclipse-workspace\Jan2025APIFW\src\test\resources\testrunners\testng_regression.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;API Regression Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;4&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.aventstack.chaintest.plugins.ChainTestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Go Rest API Test - Get User&quot; verbose=&quot;4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.api.qa.gorest.tests.GetUserTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Go Rest API Test - Get User --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Go Rest API Test- Create User&quot; verbose=&quot;4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.api.qa.gorest.tests.CreateUserTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Go Rest API Test- Create User --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Go Rest API Test- Update User&quot; verbose=&quot;4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.api.qa.gorest.tests.UpdateUserTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Go Rest API Test- Update User --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Go Rest API Test- Get Product&quot; verbose=&quot;4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.api.qa.products.tests.ProductAPITest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Go Rest API Test- Get Product --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Schema Validation Test&quot; verbose=&quot;4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.api.schema.tests.GoRestUserAPISchemaTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Schema Validation Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Spotify API Test- Get Album &quot; verbose=&quot;4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.api.spotify.tests.SpotifyAPITest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Spotify API Test- Get Album  --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;BasicAuth API Test&quot; verbose=&quot;4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.api.basicauth.tests.BasicAuthTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BasicAuth API Test --&gt;
+&lt;/suite&gt; &lt;!-- API Regression Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-API_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for API Regression Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Go Rest API Test - Get User (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Go Rest API Test- Create User (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Go Rest API Test- Update User (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Go Rest API Test- Get Product (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Schema Validation Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Spotify API Test- Get Album  (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">BasicAuth API Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-API_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for API Regression Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-API_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for API Regression Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_API_Regression_Test_Suite');
+function tableData_API_Regression_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'createAUserTest')
+data.setCell(0, 2, 'com.api.qa.gorest.tests.CreateUserTest')
+data.setCell(0, 3, 22284);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getAllProducts')
+data.setCell(1, 2, 'com.api.qa.products.tests.ProductAPITest')
+data.setCell(1, 3, 21991);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'createAUserTestWithJsonFile')
+data.setCell(2, 2, 'com.api.qa.gorest.tests.CreateUserTest')
+data.setCell(2, 3, 21911);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getUserAPISchemaTest')
+data.setCell(3, 2, 'com.qa.api.schema.tests.GoRestUserAPISchemaTest')
+data.setCell(3, 3, 7628);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'updateUserTest')
+data.setCell(4, 2, 'com.api.qa.gorest.tests.UpdateUserTest')
+data.setCell(4, 3, 2151);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getAllUsersTest')
+data.setCell(5, 2, 'com.api.qa.gorest.tests.GetUserTest')
+data.setCell(5, 3, 1853);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'basicAuthTest')
+data.setCell(6, 2, 'com.qa.api.basicauth.tests.BasicAuthTest')
+data.setCell(6, 3, 1492);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'createAUserTest')
+data.setCell(7, 2, 'com.api.qa.gorest.tests.CreateUserTest')
+data.setCell(7, 3, 922);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'createAUserTest')
+data.setCell(8, 2, 'com.api.qa.gorest.tests.CreateUserTest')
+data.setCell(8, 3, 869);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'createAUserTest')
+data.setCell(9, 2, 'com.api.qa.gorest.tests.CreateUserTest')
+data.setCell(9, 3, 842);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'createAUserTest')
+data.setCell(10, 2, 'com.api.qa.gorest.tests.CreateUserTest')
+data.setCell(10, 3, 842);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'getSingleUserTest')
+data.setCell(11, 2, 'com.api.qa.gorest.tests.GetUserTest')
+data.setCell(11, 3, 793);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'createUserAPISchemaTest')
+data.setCell(12, 2, 'com.qa.api.schema.tests.GoRestUserAPISchemaTest')
+data.setCell(12, 3, 789);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'createAUserTest')
+data.setCell(13, 2, 'com.api.qa.gorest.tests.CreateUserTest')
+data.setCell(13, 3, 620);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'getAllUsersTestWithQueryParamTest')
+data.setCell(14, 2, 'com.api.qa.gorest.tests.GetUserTest')
+data.setCell(14, 3, 608);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'getAlbumTest')
+data.setCell(15, 2, 'com.qa.api.spotify.tests.SpotifyAPITest')
+data.setCell(15, 3, 393);
+window.suiteTableData['API_Regression_Test_Suite']= { tableData: data, tableDiv: 'times-div-API_Regression_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-API_Regression_Test_Suite">
+              </div> <!-- times-div-API_Regression_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-API_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for API Regression Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-API_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-API_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.api.basicauth.tests.BasicAuthTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupAllureReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.qa.gorest.tests.GetUserTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">288 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">getAllUsersTest</span>
+                <span class="method-start">423 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAllUsersTestWithQueryParamTest</span>
+                <span class="method-start">2340 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getSingleUserTest</span>
+                <span class="method-start">2953 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.qa.gorest.tests.CreateUserTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3816 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpToken</span>
+                <span class="method-start">3820 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">createAUserTest(ankita, male, active)</span>
+                <span class="method-start">4466 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createAUserTest(puneet, male, inactive)</span>
+                <span class="method-start">5390 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createAUserTest(mukul, male, active)</span>
+                <span class="method-start">6235 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createAUserTest(sonu, male, active)</span>
+                <span class="method-start">7089 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createAUserTest(raja, male, active)</span>
+                <span class="method-start">29375 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createAUserTest(pashika, female, active)</span>
+                <span class="method-start">29998 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createAUserTestWithJsonFile</span>
+                <span class="method-start">30869 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.qa.gorest.tests.UpdateUserTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">52790 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">updateUserTest</span>
+                <span class="method-start">52792 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpToken</span>
+                <span class="method-start">52792 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.qa.products.tests.ProductAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">54961 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">getAllProducts</span>
+                <span class="method-start">54963 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.api.schema.tests.GoRestUserAPISchemaTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">76965 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">createUserAPISchemaTest</span>
+                <span class="method-start">76966 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getUserAPISchemaTest</span>
+                <span class="method-start">77768 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.api.spotify.tests.SpotifyAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">85404 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">getOAuth2Token</span>
+                <span class="method-start">85405 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getAlbumTest</span>
+                <span class="method-start">85645 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.api.basicauth.tests.BasicAuthTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">86059 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">basicAuthTest</span>
+                <span class="method-start">86060 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
