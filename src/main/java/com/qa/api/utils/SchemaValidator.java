@@ -1,7 +1,6 @@
 package com.qa.api.utils;
 
 import io.restassured.response.Response;
-import io.restassured.module.*;
 import io.restassured.module.jsv.JsonSchemaValidator;
 
 public class SchemaValidator {
