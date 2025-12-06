@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="11" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-06T21:49:36 IST" name="API Sanity Test Suite" finished-at="2025-12-06T21:49:55 IST" duration-ms="18425">
+    <groups>
+    </groups>
+    <test started-at="2025-12-06T21:49:36 IST" name="Go Rest API Test - Get User" finished-at="2025-12-06T21:49:43 IST" duration-ms="6628">
+      <class name="com.api.qa.gorest.tests.GetUserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.qa.gorest.tests.GetUserTest@6b98a075]" started-at="2025-12-06T21:49:36 IST" name="setup" finished-at="2025-12-06T21:49:37 IST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getAllUsersTest()[pri:0, instance:com.api.qa.gorest.tests.GetUserTest@6b98a075]" started-at="2025-12-06T21:49:37 IST" name="getAllUsersTest" finished-at="2025-12-06T21:49:38 IST" duration-ms="1491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsersTest -->
+        <test-method signature="getAllUsersTestWithQueryParamTest()[pri:0, instance:com.api.qa.gorest.tests.GetUserTest@6b98a075]" started-at="2025-12-06T21:49:38 IST" name="getAllUsersTestWithQueryParamTest" finished-at="2025-12-06T21:49:41 IST" duration-ms="3331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsersTestWithQueryParamTest -->
+        <test-method signature="getSingleUserTest()[pri:0, instance:com.api.qa.gorest.tests.GetUserTest@6b98a075]" started-at="2025-12-06T21:49:41 IST" name="getSingleUserTest" finished-at="2025-12-06T21:49:43 IST" duration-ms="1550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleUserTest -->
+      </class> <!-- com.api.qa.gorest.tests.GetUserTest -->
+    </test> <!-- Go Rest API Test - Get User -->
+    <test started-at="2025-12-06T21:49:43 IST" name="Go Rest API Test- Create User" finished-at="2025-12-06T21:49:52 IST" duration-ms="8541">
+      <class name="com.api.qa.gorest.tests.CreateUserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.qa.gorest.tests.CreateUserTest@f478a81]" started-at="2025-12-06T21:49:43 IST" name="setup" finished-at="2025-12-06T21:49:43 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpToken()[pri:0, instance:com.api.qa.gorest.tests.CreateUserTest@f478a81]" started-at="2025-12-06T21:49:43 IST" name="setUpToken" finished-at="2025-12-06T21:49:43 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpToken -->
+        <test-method signature="createAUserTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.api.qa.gorest.tests.CreateUserTest@f478a81]" started-at="2025-12-06T21:49:44 IST" name="createAUserTest" data-provider="getUserExcelData" finished-at="2025-12-06T21:49:46 IST" duration-ms="1745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ankita]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[active]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAUserTest -->
+        <test-method signature="createAUserTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.api.qa.gorest.tests.CreateUserTest@f478a81]" started-at="2025-12-06T21:49:46 IST" name="createAUserTest" data-provider="getUserExcelData" finished-at="2025-12-06T21:49:47 IST" duration-ms="986" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[puneet]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[inactive]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAUserTest -->
+        <test-method signature="createAUserTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.api.qa.gorest.tests.CreateUserTest@f478a81]" started-at="2025-12-06T21:49:47 IST" name="createAUserTest" data-provider="getUserExcelData" finished-at="2025-12-06T21:49:48 IST" duration-ms="719" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mukul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[active]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAUserTest -->
+        <test-method signature="createAUserTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.api.qa.gorest.tests.CreateUserTest@f478a81]" started-at="2025-12-06T21:49:48 IST" name="createAUserTest" data-provider="getUserExcelData" finished-at="2025-12-06T21:49:49 IST" duration-ms="632" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sonu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[active]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAUserTest -->
+        <test-method signature="createAUserTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.api.qa.gorest.tests.CreateUserTest@f478a81]" started-at="2025-12-06T21:49:49 IST" name="createAUserTest" data-provider="getUserExcelData" finished-at="2025-12-06T21:49:50 IST" duration-ms="1557" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[raja]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[active]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAUserTest -->
+        <test-method signature="createAUserTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.api.qa.gorest.tests.CreateUserTest@f478a81]" started-at="2025-12-06T21:49:50 IST" name="createAUserTest" data-provider="getUserExcelData" finished-at="2025-12-06T21:49:51 IST" duration-ms="684" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pashika]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[active]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAUserTest -->
+        <test-method signature="createAUserTestWithJsonFile()[pri:0, instance:com.api.qa.gorest.tests.CreateUserTest@f478a81]" started-at="2025-12-06T21:49:51 IST" name="createAUserTestWithJsonFile" finished-at="2025-12-06T21:49:52 IST" duration-ms="849" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code (<200> or <201>) but was <422>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code (<200> or <201>) but was <422>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.qa.api.client.RestClient.post(RestClient.java:144)
+at com.api.qa.gorest.tests.CreateUserTest.createAUserTestWithJsonFile(CreateUserTest.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAUserTestWithJsonFile -->
+      </class> <!-- com.api.qa.gorest.tests.CreateUserTest -->
+    </test> <!-- Go Rest API Test- Create User -->
+    <test started-at="2025-12-06T21:49:52 IST" name="Go Rest API Test- Update User" finished-at="2025-12-06T21:49:54 IST" duration-ms="2585">
+      <class name="com.api.qa.gorest.tests.UpdateUserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.qa.gorest.tests.UpdateUserTest@7ce97ee5]" started-at="2025-12-06T21:49:52 IST" name="setup" finished-at="2025-12-06T21:49:52 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpToken()[pri:0, instance:com.api.qa.gorest.tests.UpdateUserTest@7ce97ee5]" started-at="2025-12-06T21:49:52 IST" name="setUpToken" finished-at="2025-12-06T21:49:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpToken -->
+        <test-method signature="updateUserTest()[pri:0, instance:com.api.qa.gorest.tests.UpdateUserTest@7ce97ee5]" started-at="2025-12-06T21:49:52 IST" name="updateUserTest" finished-at="2025-12-06T21:49:54 IST" duration-ms="2579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserTest -->
+      </class> <!-- com.api.qa.gorest.tests.UpdateUserTest -->
+    </test> <!-- Go Rest API Test- Update User -->
+    <test started-at="2025-12-06T21:49:54 IST" name="Go Rest API Test- Get Product" finished-at="2025-12-06T21:49:55 IST" duration-ms="568">
+      <class name="com.api.qa.products.tests.ProductAPITest">
+        <test-method is-config="true" signature="initSetup()[pri:0, instance:com.api.qa.products.tests.ProductAPITest@53dacd14]" started-at="2025-12-06T21:49:36 IST" name="initSetup" finished-at="2025-12-06T21:49:36 IST" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.qa.products.tests.ProductAPITest@53dacd14]" started-at="2025-12-06T21:49:54 IST" name="setup" finished-at="2025-12-06T21:49:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getAllProducts()[pri:0, instance:com.api.qa.products.tests.ProductAPITest@53dacd14]" started-at="2025-12-06T21:49:54 IST" name="getAllProducts" finished-at="2025-12-06T21:49:55 IST" duration-ms="562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllProducts -->
+      </class> <!-- com.api.qa.products.tests.ProductAPITest -->
+    </test> <!-- Go Rest API Test- Get Product -->
+  </suite> <!-- API Sanity Test Suite -->
+</testng-results>

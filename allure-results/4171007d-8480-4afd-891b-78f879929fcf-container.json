@@ -1,0 +1,1 @@
+{"uuid":"4171007d-8480-4afd-891b-78f879929fcf","name":"Spotify API Test- Get Album ","children":["d291a510-9103-4593-aa30-92678e0be37b"],"befores":[{"name":"setup","status":"broken","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1765032477554,"stop":1765032477554}],"afters":[],"start":1765032477553,"stop":1765032477564}

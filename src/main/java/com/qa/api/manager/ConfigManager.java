@@ -9,18 +9,24 @@ public class ConfigManager {
 	private static Properties properties = new Properties();
 
 	static {
+		
+		String envName = System.getProperty("env", "prod");
+		 System.out.println("running tests on environment...."+envName);
+		 String fileName = "config_"+ envName + ".properties";
+		 
 
-		InputStream input = ConfigManager.class.getClassLoader().getResourceAsStream("config/config.properties");
+		InputStream input = ConfigManager.class.getClassLoader().getResourceAsStream(fileName);
 
 		if (input != null) {
 
 			try {
 				properties.load(input);
+			System.out.println("properties >>>>" + properties);
 			} catch (IOException e) {
 
 				e.printStackTrace();
 			}
-			System.out.println("properties====" + properties);
+			
 		}
 
 	}

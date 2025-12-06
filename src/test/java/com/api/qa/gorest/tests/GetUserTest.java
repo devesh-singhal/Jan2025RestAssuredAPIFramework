@@ -35,7 +35,7 @@ public class GetUserTest extends BaseTest{
 	 
     @Test
     public void getSingleUserTest() {
-    	String userId = "8229341";
+    	String userId = "8229330";
     
     	Response response = restClient.get(BASE_URL_GOREST, GOREST_USERS_ENDPOINT+"/"+userId, null, null, AuthType.BEARER_TOKEN, ContentType.JSON);
     	Assert.assertTrue(response.statusLine().contains("OK"));
