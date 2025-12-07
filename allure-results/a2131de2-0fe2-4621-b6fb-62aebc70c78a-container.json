@@ -1,1 +1,0 @@
-{"uuid":"a2131de2-0fe2-4621-b6fb-62aebc70c78a","name":"Go Rest API Test- Get Product","children":["ddb1088c-8b43-40c7-a848-7aea6fc55f5b"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1764941491036,"stop":1764941491037}],"afters":[],"start":1764941491036,"stop":1764941512761}

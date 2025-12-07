@@ -1,1 +1,0 @@
-{"uuid":"800ebecb-ad41-4d42-b45e-28245b5282d9","name":"BasicAuth API Test","children":["2395c5bf-db8b-4456-9080-5216542b5b74"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1764941516459,"stop":1764941516460}],"afters":[],"start":1764941516459,"stop":1764941518067}

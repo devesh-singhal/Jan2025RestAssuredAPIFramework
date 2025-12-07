@@ -1,1 +1,0 @@
-{"uuid":"76f8b81b-3afe-4f61-a1dd-343a82f6fab8","name":"Go Rest API Test- Update User","children":["87a68dfd-8c32-4ad3-97af-7ac125c531df"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1765037992146,"stop":1765037992148}],"afters":[],"start":1765037992145,"stop":1765037994730}
