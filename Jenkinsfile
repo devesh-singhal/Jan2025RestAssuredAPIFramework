@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        DOCKER_IMAGE = "singhalfalcon/jan2025apiframework:${BUILD_NUMBER}"
+         docker_image = "singhalfalcon/jan2025apiframework:${BUILD_NUMBER}"
          DOCKER_CREDENTIALS_ID = "dockerhub_credentials"
     }
 
@@ -19,7 +19,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                bat "docker build -t ${DOCKER_IMAGE} ."
+                bat "docker build -t ${docker_image} ."
             }
         }
 
@@ -32,7 +32,6 @@ pipeline {
                 )]) {
                    bat '''
                         echo \"${DOCKER_PASS}\" | docker login -u \"${DOCKER_USER}\" --password-stdin
-                        docker push ${DOCKER_IMAGE}
                        '''
                 }
             }
@@ -50,7 +49,7 @@ pipeline {
            script {
             def status = bat(
                 script: """
-                    docker run --rm -v \$WORKSPACE:/app -w /app ${DOCKER_IMAGE} \
+                    docker run --rm -v \$WORKSPACE:/app -w /app ${docker_image} \
                     mvn test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_sanity.xml -Denv=prod
                 """,
                 returnStatus: true
@@ -74,7 +73,7 @@ pipeline {
                 script {
                     def status = bat(
                         script: """
-                  				  docker run --rm -v \$WORKSPACE:/app -w /app ${DOCKER_IMAGE} \
+                  				  docker run --rm -v \$WORKSPACE:/app -w /app ${docker_image} \
                   				  mvn test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_sanity.xml -Denv=prod
                					 """,
                         returnStatus: true
@@ -123,7 +122,7 @@ pipeline {
                 script {
                     def status = bat(
                         script: """
-                    			docker run --rm -v \$WORKSPACE:/app -w /app ${DOCKER_IMAGE} \
+                    			docker run --rm -v \$WORKSPACE:/app -w /app ${docker_image} \
                     			mvn test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_sanity.xml -Denv=prod
                 				""",
                         returnStatus: true
@@ -160,7 +159,7 @@ pipeline {
                 script {
                     def status = bat(
                         script: """
-                    			docker run --rm -v \$WORKSPACE:/app -w /app ${DOCKER_IMAGE} \
+                    			docker run --rm -v \$WORKSPACE:/app -w /app ${docker_image} \
                     			mvn test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_sanity.xml -Denv=prod
                				 """,
                         returnStatus: true
