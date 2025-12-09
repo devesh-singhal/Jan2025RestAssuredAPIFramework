@@ -28,10 +28,16 @@ pipeline {
 				script {
                 withCredentials(withCredentials([string(credentialsId: 'dockerhub-password', variable: 'dockerhubpassword')]) {
                 bat 'docker login -u singhalfalcon -p ${dockerhubpassword}'
+                
+     }           
                 bat docker push ${DOCKER_IMAGE}
                 }
             }
+        }
         
+     }
+     
+   }   
 
         stage('Deploy to Dev') {
             steps {
