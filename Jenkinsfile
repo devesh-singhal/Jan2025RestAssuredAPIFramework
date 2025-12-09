@@ -31,9 +31,7 @@ pipeline {
                 bat docker push ${DOCKER_IMAGE}
                 }
             }
-        }
         
-     }
 
         stage('Deploy to Dev') {
             steps {
