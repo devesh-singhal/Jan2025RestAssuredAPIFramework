@@ -32,7 +32,7 @@ pipeline {
                 )]) {
                    bat """
                         echo "Logging in to Docker Hub..."
-                        echo %DOCKER_PASS% | docker login --username %DOCKER_USER% --password-stdin
+                        echo %DOCKER_PASS% | docker login --username %DOCKER_USER% --password %DOCKER_PASS%
                         docker push ${DOCKER_IMAGE}
                        """
                 }
