@@ -7,7 +7,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "singhalfalcon/jan2025apiframework:${BUILD_NUMBER}"
-        DOCKER_CREDENTIALS_ID = 'dockerhub-password'
+         DOCKER_CREDENTIALS_ID = "dockerhub_credentials"
     }
 
     stages {
@@ -25,19 +25,18 @@ pipeline {
 
         stage('Push Docker Image to Docker Hub') {
             steps {
-				script {
-                withCredentials(withCredentials([string(credentialsId: 'dockerhub-password', variable: 'dockerhubpassword')]) {
-                bat 'docker login -u singhalfalcon -p ${dockerhubpassword}'
-                
-     }           
-                bat docker push ${DOCKER_IMAGE}
+                withCredentials([usernamePassword(
+                    credentialsId: "${DOCKER_CREDENTIALS_ID}",
+                    usernameVariable: 'DOCKER_USER',
+                    passwordVariable: 'DOCKER_PASS'
+                )]) {
+                    sh '''
+                        "echo \"${DOCKER_PASS}\" | docker login -u \"${DOCKER_USER}\" --password-stdin"
+                        docker push ${DOCKER_IMAGE}
+                       '''
                 }
             }
         }
-        
-     }
-     
-   }   
 
         stage('Deploy to Dev') {
             steps {
