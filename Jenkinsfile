@@ -7,7 +7,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "singhalfalcon/jan2025apiframework:${BUILD_NUMBER}"
-        DOCKER_CREDENTIALS_ID = 'dockerhub_credentials'
+        DOCKER_CREDENTIALS_ID = credentials('dockerhub_credentials')
     }
 
     stages {
